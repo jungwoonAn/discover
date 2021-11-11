@@ -10,10 +10,58 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/active.js"></script>
 </head>
 <body>
     <div id="wrap">
-        <div id="top">            
+        <div id="top">
+            <div id="slider">
+                <ul class="slide">
+                    <li>
+                        <div class="slide_content">
+                            <h2>DISCOVER</h2>
+                            <h3>the world</h3>
+                            <div class="btn">
+                                <a href="#">EXPLORE NOW</a>
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="slide_cover"></div>
+                    </li>
+                    <li>
+                        <div class="slide_content">
+                            <h2>DISCOVER</h2>
+                            <h3>the world</h3>
+                            <div class="btn">
+                                <a href="#">EXPLORE NOW</a>
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide_content">
+                            <h2>DISCOVER</h2>
+                            <h3>the world</h3>
+                            <div class="btn">
+                                <a href="#">EXPLORE NOW</a>
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <span class="prev">&lt;</span>
+                <span class="next">&gt;</span>
+                
+            </div>
+
             <header>
                 <div id="topbar">
                     <div class="container">
@@ -56,9 +104,72 @@
                     </div>
                 </nav>
             </header>
+
+            <div class="search_tab">
+                <div class="search_li active">
+                    <i class="fas fa-hotel"></i>                    
+                    <span>HOTELS</span>
+                </div>
+
+                <div class="search_li">
+                    <i class="fas fa-shuttle-van"></i>
+                    <span>CAR RENTALS</span>
+                </div>
+
+                <div class="search_li">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>FLIGHTS</span>
+                </div>
+
+                <div class="search_li">
+                    <i class="fas fa-suitcase-rolling"></i>
+                    <span>TRIPS</span>
+                </div>
+
+                <div class="search_li">
+                    <i class="fas fa-ship"></i>
+                    <span>CRUISES</span>
+                </div>
+
+                <div class="search_li">
+                    <i class="fas fa-swimmer"></i>
+                    <span>ACTIVITIES</span>
+                </div>
+            </div>
         </div>
+
         <div id="search">
-            <div class="container"></div>
+            <div class="container">
+                <div class="search_item">
+                    <p>DESTINATION</p>
+                    <input type="text" name="destination" id="destination">
+                </div>
+
+                <div class="search_item">
+                    <p>CHECK IN</p>
+                    <input type="text" name="destination" id="destination">
+                </div>
+
+                <div class="search_item">
+                    <p>CHECK OUT</p>
+                    <input type="text" name="destination" id="destination">
+                </div>
+
+                <div class="search_item">
+                    <p>ADULTS</p>
+                    <input type="text" name="destination" id="destination">
+                </div>
+
+                <div class="search_item">
+                    <p>CHILDREN</p>
+                    <input type="text" name="destination" id="destination">
+                </div>
+
+                <div class="btn">
+                    <a href="#">SEARCH</a>
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
         </div>
 
         <div id="intro">
