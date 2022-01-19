@@ -9,8 +9,12 @@ a {text-decoration: none; color: #333;}
     --main_color_purple: #350a4e;
     --gradient_color: #8d4fff;
 
+    --font_color_black:#2d2c2c;
+    --font_color_gray: #929191;
+
     --font_small: 12px;
     --font_basic: 14px;
+    --font_large: 24px;
     --font_logo: 30px;
 }
 
@@ -40,7 +44,7 @@ header {width: 100%; height: 180px; position:absolute; top: 0; left: 0;}
 .search i {color: #fff;}
 .hamburger {display: none;}
 
-.btn {width: 220px; height: 50px; background: linear-gradient(to right, var(--main_color_orange), var(--gradient_color)); border-radius: 30px; text-align: center; margin: 20px auto 0;}
+.btn {width: 220px; height: 50px; background: linear-gradient(to right, var(--main_color_orange), var(--gradient_color)); border-radius: 30px; text-align: center; margin: 20px auto 0; z-index: 5;}
 .btn a {line-height: 50px; color: #fff; font-size: var(--font_basic); font-weight: bold;}
 .btn:hover {background: linear-gradient(to left, var(--main_color_orange), var(--gradient_color)); }
 .btn span {display: inline-block; width: 6px; height: 6px; border-radius: 50%; background-color: #fff; margin: 0 2px;}
