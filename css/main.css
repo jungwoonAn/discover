@@ -19,7 +19,7 @@
 .prev {left:50px;}
 .next {right:50px;}
 
-.search_tab {width: 1140px; height: 95px; position: absolute; bottom:0; left:50%; bottom:0; transform: translateX(-50%); background-color: #fff; border-radius: 100px 100px 0 0; display: flex; overflow: hidden; }
+.search_tab {width: 1140px; height: 95px; position: absolute; bottom:0; left:50%; bottom:0; transform: translateX(calc(-50% - 7px)); background-color: #fff; border-radius: 100px 100px 0 0; display: flex; overflow: hidden; }
 .search_li {display: flex; justify-content: center; align-items: center; flex: 1; font-size: var(--font_basic); font-weight: 600;}
 .search_li i {margin-right: 10px; color: var(--main_color_orange); font-size: 20px;}
 .active { background-color: var(--main_color_orange); color: #fff;}
@@ -44,7 +44,7 @@
 .intro_item:last-of-type {background: url('../img/main/intro_3.jpg') center/cover;}
 .intro_date {width: 60%; height: 30px; border-radius: 15px; background-color: var(--main_color_orange); text-align: center; line-height: 30px; font-size: var(--font_small); color: #fff; z-index: 5;}
 .intro_text {z-index: 5;}
-.intro_text h1 {font-size: 50px; color: rgb(102, 102, 102);}
+.intro_text h1 {font-size: 50px; color: #fff;}
 .intro_text p {font-size: var(--font_small); color: #fff; text-align: center;}
 .intro_star {z-index: 5; display: flex; justify-content: center; padding: 10px 0;}
 .intro_star i {padding: 0 5px;}
