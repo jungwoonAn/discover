@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-#top {width: 100vw; height: 100vh; position: relative;}
-#slider {width: 100vw; height: 100vh; overflow: hidden;}
+#top {width: 100%; height: 100vh; position: relative;}
+#slider {width: 100%; height: 100vh; overflow: hidden;}
 .slide {width: 300vw; height: 100vh; }
 .slide li {float:left; width: 100vw; height: 100%; }
 .slide li:first-of-type {background: url('../img/main/slider.jpg') center/cover;}
@@ -19,7 +19,7 @@
 .prev {left:50px;}
 .next {right:50px;}
 
-.search_tab {width: 1140px; height: 95px; position: absolute; bottom:0; left:50%; bottom:0; transform: translateX(calc(-50% - 7px)); background-color: #fff; border-radius: 100px 100px 0 0; display: flex; overflow: hidden; }
+.search_tab {width: 1140px; height: 95px; position: absolute; bottom:0; left:50%; bottom:0; transform: translateX(-50%); background-color: #fff; border-radius: 90px 90px 0 0; display: flex; overflow: hidden; }
 .search_li {display: flex; justify-content: center; align-items: center; flex: 1; font-size: var(--font_basic); font-weight: 600;}
 .search_li i {margin-right: 10px; color: var(--main_color_orange); font-size: 20px;}
 .active { background-color: var(--main_color_orange); color: #fff;}
@@ -47,11 +47,20 @@
 .intro_text h1 {font-size: 50px; color: #fff;}
 .intro_text p {font-size: var(--font_small); color: #fff; text-align: center;}
 .intro_star {z-index: 5; display: flex; justify-content: center; padding: 10px 0;}
-.intro_star i {padding: 0 5px;}
+.intro_star i {padding: 0 5px; color: #a5a5a5;}
+.star .fa-star:nth-of-type(1) {color: #ffeb8d;}
+.star .fa-star:nth-of-type(2) {color: #fed46b;}
+.star .fa-star:nth-of-type(3) {color: #fbb53d;}
+.star .fa-star:nth-of-type(4) {color: #fa9e1b;}
 
 
 
-#package {width: 100%; height: 625px; background-color: gold;}
+#package {width: 100%; height: 655px; background: url('../img/main/package.jpg') center/cover no-repeat; position:relative;}
+#package::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, var(--main_color_orange), var(--gradient_color)); opacity: 0.7; z-index: 5;}
+#package .container {display: flex; justify-content: center; align-items: center;}
+.package_inner {width: 100%; height: 415px; position: relative; z-index: 6; display:flex; flex-direction: column; align-items: center; justify-content: space-evenly; padding: 75px 90px 61px; background-color: #fff;}
+.package_star i {padding: 0 5px; color: #a5a5a5;}
+.package_inner p {line-height: 2.3; font-weight: 600; color: #929191; text-align: center; font-size: var(--font_basic);}
 
 #offer {width: 100%; height: 1045px; background-color: #f3f6f9;}
 
